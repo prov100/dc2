@@ -1,0 +1,12 @@
+version: v2
+modules:
+  - path: internal/proto
+    name: buf.build/dc2/dc2
+lint:
+  use:
+    - STANDARD
+breaking:
+  use:
+    - FILE
+deps:
+  - buf.build/bufbuild/protovalidate
